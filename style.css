@@ -2492,6 +2492,27 @@ h2 {
   background: white;
   padding-bottom: 40px;
 }
+.phase5-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* spacing between journal and contact */
+  padding: 2rem;
+}
+
+.journal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.contact-box {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
 .contact-box {
   margin-top: 40px;
   padding: 20px;
