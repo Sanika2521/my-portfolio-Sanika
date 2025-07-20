@@ -2482,6 +2482,24 @@ h2 {
   background: linear-gradient(135deg, #ff9a8b, #fad0c4);
   color: #2e2e2e;
 }
+#contact {
+  margin-top: 60px;
+  padding: 30px;
+  background: #f4f4f4; /* light gray background to separate visually */
+  border-top: 2px solid #ddd;
+}
+.phase5-section {
+  background: white;
+  padding-bottom: 40px;
+}
+.contact-box {
+  max-width: 600px;
+  margin: auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
 
 
