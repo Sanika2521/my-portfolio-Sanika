@@ -2482,3 +2482,25 @@ h2 {
   background: linear-gradient(135deg, #ff9a8b, #fad0c4);
   color: #2e2e2e;
 }
+.settings-section {
+  padding: 2rem;
+  background: #1e1e2f;
+  border-radius: 10px;
+  margin: 2rem;
+  color: white;
+}
+
+.font-settings select {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+}
+
+.contact-box a {
+  color: #00b4d8;
+  font-weight: bold;
+  text-decoration: none;
+}
+.contact-box a:hover {
+  text-decoration: underline;
+}
