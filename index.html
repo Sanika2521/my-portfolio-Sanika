@@ -364,6 +364,20 @@
   <script src="script.js"></script>
  <script src="js/gallery.js"></script>
  <script src="js/journal.js"></script>
+  <script>
+  const text = "Sanika's Portfolio";
+  let i = 0;
+
+  function typing() {
+    if (i < text.length) {
+      document.getElementById('typing').innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typing, 150);
+    }
+  }
+  window.onload = typing;  // start typing when page loads
+</script>
+
 
    <script>
 function openModal(id) {
