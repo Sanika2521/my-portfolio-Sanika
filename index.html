@@ -41,34 +41,7 @@
       </nav>
     </div>
     <div class="purple-line"></div>
-<section class="settings-section">
-  <h2>⚙️ Settings</h2>
 
-  <!-- Font Size Settings -->
-  <div class="font-settings">
-    <h3>📝 Font Size</h3>
-    <select id="fontSizeSelector">
-      <option value="default">Default</option>
-      <option value="small">Small</option>
-      <option value="medium">Medium</option>
-      <option value="large">Large</option>
-      <option value="xlarge">Extra Large</option>
-    </select>
-  </div>
-
-  <!-- Contact Info -->
-  <div class="contact-box">
-    <h3>📞 Contact Me</h3>
-    <p><strong>Name:</strong> Sanika Gunjal</p>
-    <p><strong>Phone:</strong> <a href="tel:+919136294468">+91 9136294468</a></p>
-    <p><strong>Email:</strong> <a href="mailto:sanikagunjal2506@gmail.com">sanikagunjal2506@gmail.com</a></p>
-    <p><strong>LinkedIn:</strong> 
-      <a href="https://www.linkedin.com/in/sanika-gunjal" target="_blank">
-        www.linkedin.com/in/sanika-gunjal
-      </a>
-    </p>
-  </div>
-</section>
 
   </div>
 <section class="hero">
@@ -397,34 +370,6 @@ function closeModal(id) {
     </div>
   </div>
 </div>
-<script>
-  const fontSizeSelector = document.getElementById('fontSizeSelector');
-
-  fontSizeSelector.addEventListener('change', function () {
-    const selectedSize = fontSizeSelector.value;
-    const body = document.body;
-
-    // Reset all first
-    body.style.fontSize = "";
-
-    switch (selectedSize) {
-      case 'small':
-        body.style.fontSize = '12px';
-        break;
-      case 'medium':
-        body.style.fontSize = '16px';
-        break;
-      case 'large':
-        body.style.fontSize = '20px';
-        break;
-      case 'xlarge':
-        body.style.fontSize = '24px';
-        break;
-      default:
-        body.style.fontSize = '';
-    }
-  });
-</script>
 
 <script>
   const text = "Sanika's Portfolio";
