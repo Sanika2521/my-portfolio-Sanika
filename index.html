@@ -41,42 +41,34 @@
       </nav>
     </div>
     <div class="purple-line"></div>
-  </header>
-<div class="settings-panel" id="settingsPanel">
-  <h3>🛠 Settings</h3>
-  <label for="theme">Theme:</label>
-  <select id="theme" onchange="changeTheme(this.value)">
-    <option value="default">Default</option>
-    <option value="ocean">Calm Ocean</option>
-    <option value="retro">Retro 90s</option>
-    <option value="dark">Dark</option>
-    <option value="light">Light</option>
-    <option value="forest">Forest Green</option>
-    <option value="sunset">Sunset Glow</option>
-  </select>
+<section class="settings-section">
+  <h2>⚙️ Settings</h2>
 
-  <label for="font">Font Style:</label>
-  <select id="font" onchange="changeFont(this.value)">
-    <option value="'Poppins', sans-serif">Poppins</option>
-    <option value="'Orbitron', sans-serif">Orbitron</option>
-    <option value="'Courier New', monospace">Courier New</option>
-    <option value="'Playfair Display', serif">Playfair Display</option>
-    <option value="'Roboto', sans-serif">Roboto</option>
-    <option value="'Lora', serif">Lora</option>
-    <option value="'Montserrat', sans-serif">Montserrat</option>
-    <option value="'Open Sans', sans-serif">Open Sans</option>
-    <option value="'Raleway', sans-serif">Raleway</option>
-  </select>
-</div>
+  <!-- Font Size Settings -->
+  <div class="font-settings">
+    <h3>📝 Font Size</h3>
+    <select id="fontSizeSelector">
+      <option value="default">Default</option>
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+      <option value="xlarge">Extra Large</option>
+    </select>
+  </div>
 
-
-<!-- inside settings panel -->
-<label for="fontsize">Font Size:</label>
-<select id="fontsize" onchange="changeFontSize(this.value)">
-  <option value="16px">Medium</option>
-  <option value="18px" selected>Large</option>
-  <option value="20px">Extra Large</option>
-</select>
+  <!-- Contact Info -->
+  <div class="contact-box">
+    <h3>📞 Contact Me</h3>
+    <p><strong>Name:</strong> Sanika Gunjal</p>
+    <p><strong>Phone:</strong> <a href="tel:+919136294468">+91 9136294468</a></p>
+    <p><strong>Email:</strong> <a href="mailto:sanikagunjal2506@gmail.com">sanikagunjal2506@gmail.com</a></p>
+    <p><strong>LinkedIn:</strong> 
+      <a href="https://www.linkedin.com/in/sanika-gunjal" target="_blank">
+        www.linkedin.com/in/sanika-gunjal
+      </a>
+    </p>
+  </div>
+</section>
 
   </div>
 <section class="hero">
@@ -406,49 +398,34 @@ function closeModal(id) {
   </div>
 </div>
 <script>
-function toggleSettings() {
-  const panel = document.getElementById('settingsPanel');
-  panel.style.right = (panel.style.right === '0px') ? '-300px' : '0px';
-}
+  const fontSizeSelector = document.getElementById('fontSizeSelector');
 
-function changeTheme(theme) {
-  const root = document.documentElement;
-  switch (theme) {
-    case 'default':
-      root.style.setProperty('--bg-color', '#121212');
-      root.style.setProperty('--accent-color', '#00bcd4');
-      break;
-    case 'ocean':
-      root.style.setProperty('--bg-color', '#002B36');
-      root.style.setProperty('--accent-color', '#00ffff');
-      break;
-    case 'retro':
-      root.style.setProperty('--bg-color', '#fff3e0');
-      root.style.setProperty('--accent-color', '#ff5722');
-      break;
-    case 'dark':
-      root.style.setProperty('--bg-color', '#1e1e1e');
-      root.style.setProperty('--accent-color', '#ff4081');
-      break;
-    case 'light':
-      root.style.setProperty('--bg-color', '#ffffff');
-      root.style.setProperty('--accent-color', '#3f51b5');
-      break;
-    case 'forest':
-      root.style.setProperty('--bg-color', '#1b4022');
-      root.style.setProperty('--accent-color', '#4caf50');
-      break;
-    case 'sunset':
-      root.style.setProperty('--bg-color', '#ffccbc');
-      root.style.setProperty('--accent-color', '#ff7043');
-      break;
-  }
-}
+  fontSizeSelector.addEventListener('change', function () {
+    const selectedSize = fontSizeSelector.value;
+    const body = document.body;
 
-function changeFont(font) {
-  document.body.style.fontFamily = font;
-}
+    // Reset all first
+    body.style.fontSize = "";
+
+    switch (selectedSize) {
+      case 'small':
+        body.style.fontSize = '12px';
+        break;
+      case 'medium':
+        body.style.fontSize = '16px';
+        break;
+      case 'large':
+        body.style.fontSize = '20px';
+        break;
+      case 'xlarge':
+        body.style.fontSize = '24px';
+        break;
+      default:
+        body.style.fontSize = '';
+    }
+  });
 </script>
+
 <script>
   const text = "Sanika's Portfolio";
   let i = 0;
