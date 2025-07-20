@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sanika's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Orbitron&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:ital,wght@1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+     <h1 class="logo"><span id="typing"></span></h1>
+
+      <nav>
+        <a href="#">About</a>
+        <a href="#">Journey</a>
+        <a href="#">Skills</a>
+        <a href="#">Gallery</a>
+        <a href="#">Projects</a>
+        <a href="#">Learning Journal</a>
+        <a href="#">Contact</a>
+        <div class="settings-icon" onclick="toggleSettings()">⚙️</div>
+      </nav>
+    </div>
+    <div class="purple-line"></div>
+  </header>
+<div class="settings-panel" id="settingsPanel">
+  <h3>🛠 Settings</h3>
+  <label for="theme">Theme:</label>
+  <select id="theme" onchange="changeTheme(this.value)">
+    <option value="default">Default</option>
+    <option value="ocean">Calm Ocean</option>
+    <option value="retro">Retro 90s</option>
+    <option value="dark">Dark</option>
+    <option value="light">Light</option>
+    <option value="forest">Forest Green</option>
+    <option value="sunset">Sunset Glow</option>
+  </select>
+
+  <label for="font">Font Style:</label>
+  <select id="font" onchange="changeFont(this.value)">
+    <option value="'Poppins', sans-serif">Poppins</option>
+    <option value="'Orbitron', sans-serif">Orbitron</option>
+    <option value="'Courier New', monospace">Courier New</option>
+    <option value="'Playfair Display', serif">Playfair Display</option>
+    <option value="'Roboto', sans-serif">Roboto</option>
+    <option value="'Lora', serif">Lora</option>
+    <option value="'Montserrat', sans-serif">Montserrat</option>
+    <option value="'Open Sans', sans-serif">Open Sans</option>
+    <option value="'Raleway', sans-serif">Raleway</option>
+  </select>
+</div>
+
+
+<!-- inside settings panel -->
+<label for="fontsize">Font Size:</label>
+<select id="fontsize" onchange="changeFontSize(this.value)">
+  <option value="16px">Medium</option>
+  <option value="18px" selected>Large</option>
+  <option value="20px">Extra Large</option>
+</select>
+
+  </div>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Hello, I'm <span>Sanika Gunjal</span></h1>
+    <p>A passionate student exploring development, design & data.</p>
+    <a href="#projects" class="hero-btn">View My Work</a>
+  </div>
+</section>
+
+
+<section id="about" class="about-split-section">
+  <div class="about-split-container">
+    
+    <!-- LEFT SIDE: Profile -->
+    <div class="profile-container">
+      <div class="profile-inner">
+        <img src="images/m1.jpg" alt="Sanika Gunjal" class="profile-photo" />
+        <div class="profile-info">
+          <h2 class="profile-name">Sanika Gunjal</h2>
+          <p class="subtitle">Second Year Undergraduate Student</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE: Info -->
+    <div class="about-right">
+      <h2><span class="highlight">About Me</span></h2>
+      <p>Hey! I'm <strong>Sanika Gunjal</strong>, – a second-year undergraduate student pursuing Computer Engineering at Fr. Conceicao Rodrigues College of Engineering, Mumbai.<br><br>
+      <p>I’m passionate about web development, immersive XR, and building meaningful tech solutions.
+        I believe in growing through code, learning by doing, and creating with purpose.
+        So, Let s' have a look to my small growing world!
+      </p>
+
+      <div class="quick-skills">
+        <div class="skill-card">💻 Web Dev</div>
+        <div class="skill-card">🎨 UI/UX</div>
+        <div class="skill-card">🧠 XR Projects</div>
+        <div class="skill-card">🌿 Well-being Tech</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="journey-skills-container">
+
+  <!-- Left: Journey Timeline -->
+  <div class="journey-column timeline">
+    <h3 class="section-subtitle">🎓 My Educatioanl Journey</h3>
+
+    <div class="timeline-entry">
+      <span class="timeline-dot"></span>
+      <div class="timeline-year">2024-present</div>
+      <div class="timeline-details">
+        <strong>FR.CRCE, Mumbai</strong><br>
+        B.E. Computer Engineering – Year 1
+      </div>
+    </div>
+
+    <div class="timeline-entry">
+      <span class="timeline-dot"></span>
+      <div class="timeline-year">2022-24</div>
+      <div class="timeline-details">
+        <strong>12th Board</strong><br>
+        82% – Science Stream (CET Cleared - 94%)
+      </div>
+    </div>
+
+    <div class="timeline-entry">
+      <span class="timeline-dot"></span>
+      <div class="timeline-year">2021-22</div>
+      <div class="timeline-details">
+        <strong>10th Board</strong><br>
+        88% – Maharashtra State Board
+      </div>
+    </div>
+  </div>
+<div class="skills-box">
+  <h2>💡 Skills</h2>
+
+  <div class="skill-category">
+    <h3>👨‍💻 Technical Skills</h3>
+    <p>HTML, CSS, JavaScript, Git, C, C++, Java, Python</p>
+  </div>
+
+  <div class="skill-category">
+    <h3>🎨 Design & UX</h3>
+    <p>UI/UX, Canva, Figma</p>
+  </div>
+
+  <div class="skill-category">
+    <h3>🧠 Soft Skills</h3>
+    <p>Leadership, Teamwork, Event management</p>
+  </div>
+
+    <div class="skill-category">
+    <h3>🧠 Languages known</h3>
+    <p>Marathi, Hindi, English, French, German(learning), Sanskrit</p>
+  </div>
+
+
+</div>
+<section class="gallery-section">
+  <div class="gallery-heading">
+    <h2><span class="highlight">My Artworks</span></h2>
+    <p class="gallery-note">📌 Tap on any artwork to view and rate it!</p>
+  </div>
+  <div class="art-row">
+    <div class="art-card" onclick="openModal('images/at1.jpg', 'Artwork 1')">
+      <img src="images/at1.jpg" alt="Artwork 1">
+    </div>
+    <div class="art-card" onclick="openModal('images/art2.jpg', 'Artwork 2')">
+      <img src="images/art2.jpg" alt="Artwork 2">
+    </div>
+    <div class="art-card" onclick="openModal('images/art3.jpg', 'Artwork 3')">
+      <img src="images/art3.jpg" alt="Artwork 3">
+    </div>
+    <div class="art-card" onclick="openModal('images/art4.jpg', 'Artwork 4')">
+      <img src="images/art4.jpg" alt="Artwork 4">
+    </div>
+    <div class="art-card" onclick="openModal('images/art5.jpg', 'Artwork 5')">
+      <img src="images/art5.jpg" alt="Artwork 5">
+    </div>
+    <div class="art-card" onclick="openModal('images/krishna.jpg', 'Artwork 6')">
+      <img src="images/krishna.jpg" alt="Artwork 6">
+    </div>
+  </div>
+</section>
+
+<!-- Modal for Image & Rating -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modalTitle">Artwork</h3>
+    <img id="modalImage" src="" alt="Artwork">
+    <p>Rate this artwork:</p>
+    <div class="star-rating">
+      <span data-star="1">★</span>
+      <span data-star="2">★</span>
+      <span data-star="3">★</span>
+      <span data-star="4">★</span>
+      <span data-star="5">★</span>
+    </div>
+    <input type="text" id="userName" placeholder="Your name">
+    <button onclick="saveRating()">Submit Rating</button>
+    <small style="display: block; margin-top: 8px; color: #888;">Your rating is saved privately</small>
+    <input type="text" id="userName" placeholder="Your name">
+<button onclick="saveRating()">Submit Rating</button>
+<button id="resetUser" style="margin-top: 10px;">Change User</button>
+
+  </div>
+</div>
+
+
+<section id="projects" class="project-section">
+  <h2 class="section-heading">🚀 My Projects</h2>
+  <div class="project-grid">
+
+    <!-- Card 1 -->
+    <div class="project-card" onclick="openModal('modal1')">
+      <h3>GrowSphere</h3>
+      <p>Student Growth Tracker Platform</p>
+      <span class="tag">Web App</span>
+      <span class="tag">Wellness</span>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="project-card" onclick="openModal('modal2')">
+      <h3>XR Mind Garden</h3>
+      <p>Peaceful XR Flower-Blooming Scene</p>
+      <span class="tag">XR</span>
+      <span class="tag">3D</span>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="project-card" onclick="openModal('modal3')">
+      <h3>Ecommerce Website</h3>
+      <p>Alankriti: Traditional Wear classics!</p>
+      <span class="tag">Productivity</span>
+      <span class="tag">Responsive</span>
+    </div>
+
+        <!-- Card 4 -->
+    <div class="project-card" onclick="openModal('modal4')">
+      <h3>Tic Tac Toe</h3>
+      <p>Game with creativity</p>
+      <span class="tag">Creativity</span>
+      <span class="tag">Minigame</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODALS -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h2>GrowSphere</h2>
+    <p><strong>Problem Solved:</strong> Helps students track academic, emotional & social growth.</p>
+    <p><strong>Tech Stack:</strong> HTML, CSS, JS, React</p>
+    <p><strong>Self-made:</strong> Frontend, Visual Dashboard, Planner Tools</p>
+      <img src="images/gr.png" alt="GrowSphere Preview" class="modal-image" />
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h2>XR Mind Garden</h2>
+    <p><strong>Problem Solved:</strong> Reduces stress through immersive meditation + flower animation.</p>
+    <p><strong>Tech Stack:</strong> A-Frame, HTML, JS</p>
+    <p><strong>My Role:</strong> Full XR Scene, Flower Bloom, UI Design</p>
+      <img src="images/xr.png" alt="GrowSphere Preview" class="modal-image" />
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <h2>Shopping Website</h2>
+    <p><strong>Uniqueness:</strong> Creativity path towards something productive!</p>
+    <p><strong>Tech Stack:</strong> JS, HTML/CSS</p>
+    <p><strong>self-made:</strong> Curated Traditions Woven in Beauty</p>
+      <img src="images/ec.png" alt="GrowSphere Preview" class="modal-image" />
+  </div>
+</div>
+
+
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal4')">&times;</span>
+    <h2>Tic Tac Toe</h2>
+    <p><strong>Problem Solved:</strong> Mini game if we get bored while studying.</p>
+    <p><strong>Tech Stack:</strong>Html/css, JavaScript(major)</p>
+    <p><strong>Speciality:</strong> My first project using Html/CSS/JS</p>
+      <img src="images/tic.png" alt="GrowSphere Preview" class="modal-image" />
+  </div>
+</div>
+
+<!-- PHASE 5: Learning Journal and Contact Info (Up-Down Layout) -->
+<section class="phase5-section">
+  
+  <!-- Learning Journal -->
+  <div class="learning-journal">
+    <h2>📘 Learning Journal</h2>
+    <div class="journal-grid">
+    <div class="journal-card fancy">
+        <h3>1.DATA STRUCTURES(DSA)</h3>
+        <p>Currently learning and understanding Stacks and queues using C.Aiming for completion og this subject till November end.</p>
+      </div>
+      <div class="journal-card fancy">
+        <h3>2.DATA ANALYTICS</h3>
+        <p>Doing an online course for this subject and aiming to complete it by september end!</p>
+      </div>
+      <div class="journal-card fancy">
+        <h3>3.TECH DESIGN</h3>
+        <p>Creating a productive,reflective,innovative project on Sustainability concept.</p>
+      </div>
+      <div class="journal-card fancy">
+        <h3>4.ART OF LIVING</h3>
+        <p>Practicing art of living by our guru-Sri Sri Ravi Shankar for learning practical knowledge with respect to Life!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Info -->
+  <div class="contact-box">
+    <h2>📞 Contact Me</h2>
+    <p><strong>Name:</strong> Sanika Gunjal</p>
+    <p><strong>Phone no:</strong> 9136294468</p>
+    <p><strong>Email:</strong> sanikagunjal2506@gmail.com</p>
+    <p><strong>LinkedIn:</strong> <a href="#" target="_blank">www.linkedin.com/in/sanika-gunjal</a></p>
+  </div>
+</section>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+ <script src="js/gallery.js"></script>
+ <script src="js/journal.js"></script>
+
+   <script>
+function openModal(id) {
+  document.getElementById(id).style.display = "block";
+}
+
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+}
+</script>
+<!-- 📌 Artwork Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modalTitle">Artwork</h3>
+    <img id="modalImage" src="" alt="Artwork">
+    <div class="rating-box">
+      <label for="userName">Your Name:</label>
+      <input type="text" id="userName" placeholder="Enter your name">
+      <div class="star-rating">
+        <span data-star="1">&#9733;</span>
+        <span data-star="2">&#9733;</span>
+        <span data-star="3">&#9733;</span>
+        <span data-star="4">&#9733;</span>
+        <span data-star="5">&#9733;</span>
+      </div>
+      <button onclick="saveRating()">Submit</button>
+      <button id="resetUser">Reset</button>
+    </div>
+  </div>
+</div>
+<script>
+function toggleSettings() {
+  const panel = document.getElementById('settingsPanel');
+  panel.style.right = (panel.style.right === '0px') ? '-300px' : '0px';
+}
+
+function changeTheme(theme) {
+  const root = document.documentElement;
+  switch (theme) {
+    case 'default':
+      root.style.setProperty('--bg-color', '#121212');
+      root.style.setProperty('--accent-color', '#00bcd4');
+      break;
+    case 'ocean':
+      root.style.setProperty('--bg-color', '#002B36');
+      root.style.setProperty('--accent-color', '#00ffff');
+      break;
+    case 'retro':
+      root.style.setProperty('--bg-color', '#fff3e0');
+      root.style.setProperty('--accent-color', '#ff5722');
+      break;
+    case 'dark':
+      root.style.setProperty('--bg-color', '#1e1e1e');
+      root.style.setProperty('--accent-color', '#ff4081');
+      break;
+    case 'light':
+      root.style.setProperty('--bg-color', '#ffffff');
+      root.style.setProperty('--accent-color', '#3f51b5');
+      break;
+    case 'forest':
+      root.style.setProperty('--bg-color', '#1b4022');
+      root.style.setProperty('--accent-color', '#4caf50');
+      break;
+    case 'sunset':
+      root.style.setProperty('--bg-color', '#ffccbc');
+      root.style.setProperty('--accent-color', '#ff7043');
+      break;
+  }
+}
+
+function changeFont(font) {
+  document.body.style.fontFamily = font;
+}
+</script>
+
+</body>
+</html>
